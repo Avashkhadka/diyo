@@ -39,7 +39,7 @@ body {
   gap: 1rem;
 }
 .head {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 5rem;
 }
@@ -55,9 +55,12 @@ body {
   position: relative;
   color: white;
 }
+.otherLang{
+  font-size: 1.2rem;
+}
 
 .logo img {
-  height: 5rem;
+  height: 6rem;
 }
 
 .box {
@@ -133,7 +136,9 @@ body {
 .socialmedia-handle a {
   color: white;
 }
-
+.otherLang{
+  font-size: 1.1rem;
+}
 /*  * nav bar */
 
 .navbar {
