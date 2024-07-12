@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
 }
 .head-info {
@@ -250,70 +251,74 @@ font-weight: 600;
 cursor: pointer;
 display: none;
 }    
-  @media screen and (width<40rem) {
-    .navbar {
-      display: none;
-    }
-    .navbar-res{
-      display: block;
-    }
-    .head-info {
-      padding-bottom: 0.3rem;
-    }
-  
-    .socialmedia-handle {
-      display: none;
-    }
-    .logo {
-      display: none;
-    }
-  /** responsive */
-  
 
-  .nameEnglish,.name-nepali{
-    font-size: 1.1rem;
-    font-weight: 600;
-    }
-    
-    .name-nepali{
-      font-size: 1.5rem;
-      font-weight: 800;
-    }
+@media screen and (width<40rem) {
+  .navbar {
+    display: none;
+  }
+  .navbar-res{
+    display: block;
+  }
+  .head-info {
+    padding-bottom: 0.3rem;
+  }
+
+  .socialmedia-handle {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+/** responsive */
 
 
-    .ham{
-      display:block;
-    }
-
-  .navbar-res {
-    position: absolute;
-    display: flex;
-    background-color:#f6f6f6a8 ;
-    height: 100%;
-    width: 100%;
-    z-index:2;
-    backdrop-filter: blur(10px);
+.nameEnglish,.name-nepali{
+  font-size: 1.1rem;
+  font-weight: 600;
   }
   
-  .btn{
-    width: 100%;
+  .name-nepali{
+    font-size: 1.5rem;
+    font-weight: 800;
   }
-  
-  .navbar-res ul li {
-    list-style-type: none;
-  }
-  .navbar-res a {
-    text-decoration: none;
-    color: #323232;
-    font-size: 1.2rem;
-    font-weight: 600;
-    width: 100%;
-    transition: 1s ease;
-  }
- 
-  } 
 
-  
+
+  .ham{
+    display:block;
+  }
+
+
+
+
+.navbar-res {
+  position: absolute;
+  display: flex;
+  background-color:#f6f6f6a8 ;
+  height: 100%;
+  width: 100%;
+  z-index:2;
+  backdrop-filter: blur(10px);
+}
+
+.btn{
+  width: 100%;
+}
+
+.navbar-res ul li {
+  list-style-type: none;
+}
+.navbar-res a {
+  text-decoration: none;
+  color: #323232;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  transition: 1s ease;
+}
+
+
+} 
+/* *res end */
 .navbar-res{
   display: none;
 }
@@ -331,4 +336,118 @@ color: #00ac1f;
 
 .li{
   position: relative;
+}
+
+.copyright{
+  font-size: 1.25rem;
+
+
+}
+
+.copyright-container{
+  height: 7.4rem;
+  display: flex;
+  padding: 2.4rem;
+  justify-content: center;
+
+}
+.design a{
+  text-decoration: none;
+  color: #333333;
+}
+
+.copyright,.design{
+  width: 55.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.design{
+  color: #333333;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-links{
+  min-height: 30.5rem;
+  padding: 6.2rem 0 ;
+  background-color: #001D4C;
+  display: flex;
+  color: white;
+}
+
+/* * main */
+.main{
+height: 90rem;
+
+}
+.footer-links .address{
+  font-size: 1.8rem;
+ 
+}
+
+.address{
+  min-height: 7rem;
+}
+
+.address-loc i,
+.contactbtn i{
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address-loc{
+display: flex;
+gap: 1rem;
+}
+.addressHead{
+  height: 2.8rem;
+}
+
+.address-loc p{
+  font-size: 1.6rem;
+}
+
+.contactInfo{
+  height: 10rem;
+
+}
+.contactbtn{
+  font-size: 1.8rem;
+  width: 30rem;
+}
+.contactHead{
+  font-size: 1.8rem;
+  height: 2.8rem;
+  margin: 2.4rem 0;
+}
+.phone,.mail{
+
+  display: flex;
+  gap: 1rem;
+}
+
+.phone{
+  margin-bottom: 1.6rem;
+}
+.links-address,.short-info{
+  padding: 0 1.5rem;
+}
+
+
+
+@media screen and (width<40rem) {
+  .footer-links{
+    display: block;
+    }
+}
+.design a{
+  transition: 1s ease;
+}
+
+.design a:hover{
+  color: #00ac1f;
 }
