@@ -8,4 +8,5 @@ ham.addEventListener("click",()=>{
 cross.addEventListener("click",()=>{
   nav.style.display="none";
 
+  
 })
