@@ -41,6 +41,7 @@ body {
 .head {
   font-size: 3rem;
   font-weight: 900;
+  line-height: 5rem;
 }
 
 .logo {
