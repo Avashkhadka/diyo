@@ -143,6 +143,7 @@ body {
 .navbar {
   display: flex;
   position: relative;
+  padding-left: 2%;
 }
 
 .navbar a{
@@ -205,6 +206,13 @@ float: left;
   font-size: 1.6rem;
   padding: 0 4rem;
 }
+
+
+.activepage a{
+  color: #09a223;
+}
+
+
 
 @media screen and (width<40rem) {
   .navbar{
