@@ -136,7 +136,6 @@ body {
 }
 
 
-
   
 /*  * nav bar */
 
@@ -228,5 +227,22 @@ float: left;
   .logo{
     display: none;
   }
+
+}
+.calinder{
+
+  background-color: #F6F6F6;
+  padding: 1rem;
 }
 
+.cal{
+  width: 80vw;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img img{
+
+  width: 100%;
+  border: 2px solid black;
+}
