@@ -123,6 +123,17 @@ body {
   font-size: 1.5rem;
 }
 
+.nameEnglish,.name-nepali{
+font-size: 1.2rem;
+font-weight: 600;
+}
+
+.name-nepali{
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+
 .handleLinks:nth-child(1) {
   background-color: #2850b6;
 }
@@ -258,6 +269,18 @@ display: none;
     }
   /** responsive */
   
+
+  .nameEnglish,.name-nepali{
+    font-size: 1.1rem;
+    font-weight: 600;
+    }
+    
+    .name-nepali{
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+
     .ham{
       display:block;
     }
