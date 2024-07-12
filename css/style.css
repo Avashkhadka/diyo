@@ -260,7 +260,7 @@ display: none;
     position: absolute;
     display: flex;
     background-color:#f6f6f6a8 ;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     z-index:2;
     backdrop-filter: blur(10px);
