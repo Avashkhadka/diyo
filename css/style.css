@@ -584,6 +584,35 @@ color: white;
 }
 
 
+.info-organ{
+  font-size: 1.6rem;
+}
+
+.sociallink {
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+
+.sociallink a{
+  color: white;
+}
+
+.sociallink .fa-facebook-f:hover{
+color: blue;
+}
+.sociallink .fa-twitter:hover{
+color: #00ACEE;
+}
+.sociallink .fa-instagram:hover{
+color: #8a3ab9;
+}
+
+
 @media screen and (width<40rem) {
   .footer70{
     display: block;
