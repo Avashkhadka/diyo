@@ -341,7 +341,8 @@ color: #00ac1f;
 
 .copyright{
   font-size: 1.25rem;
-
+  display: flex;
+  align-items: center;
 
 }
 
