@@ -609,9 +609,13 @@ color: blue;
 color: #00ACEE;
 }
 .sociallink .fa-instagram:hover{
-color: #8a3ab9;
+  color: #8a3ab9;
 }
 
+.design  p{
+ font-size: 1rem; 
+ font-style: italic;
+}
 
 @media screen and (width<40rem) {
   .footer70{
@@ -624,4 +628,4 @@ color: #8a3ab9;
   .pagedenote .imgs {
     height: 15rem;
     background-position: 0 0rem;
-}
+}}
