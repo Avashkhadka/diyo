@@ -341,8 +341,7 @@ color: #00ac1f;
 
 .copyright{
   font-size: 1.25rem;
-  display: flex;
-  align-items: center;
+line-height: 2.6rem;
 
 }
 
@@ -373,6 +372,7 @@ color: #00ac1f;
 .copyright-container{
   display: block;
 text-align: center;
+min-height: 10rem;
 }
 }
 
