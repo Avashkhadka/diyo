@@ -562,6 +562,8 @@ color: white;
 
 .green{
   transition: 1s ease;
+  color: white;
+  text-decoration: none;
 }
 
 .green:hover{
