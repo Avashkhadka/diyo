@@ -621,5 +621,7 @@ color: #8a3ab9;
     padding: 0 1.5rem;
     width: 100%;
   }
-
+  .pagedenote .imgs {
+    height: 15rem;
+    background-position: 0 0rem;
 }
