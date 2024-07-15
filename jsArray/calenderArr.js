@@ -90,32 +90,32 @@ let calender=[
 },
   {
   id: '013',
-  image: 'assects/images/calinder-2078-1.jpg',
+  image: 'assects/images/calinder-2077-1.jpg',
   year:'2077'
 },
   {
   id: '014',
-  image: 'assects/images/calinder-2078-2.jpg',
+  image: 'assects/images/calinder-2077-2.jpg',
   year:'2077'
 },
   {
   id: '015',
-  image: 'assects/images/calinder-2078-3.jpg',
+  image: 'assects/images/calinder-2077-3.jpg',
   year:'2077'
 },
   {
   id: '016',
-  image: 'assects/images/calinder-2078-4.jpg',
+  image: 'assects/images/calinder-2077-4.jpg',
   year:'2077'
 },
   {
   id: '017',
-  image: 'assects/images/calinder-2078-5.jpg',
+  image: 'assects/images/calinder-2077-5.jpg',
   year:'2077'
 },
   {
   id: '018',
-  image: 'assects/images/calinder-2078-6.jpg',
+  image: 'assects/images/calinder-2077-6.jpg',
   year:'2077'
 },
 
