@@ -17,12 +17,6 @@ let getyear=()=>{
 getyear()
 
 
-const year81 = document.querySelector("#year81");
-const year80 = document.querySelector("#year80");
-const year79 = document.querySelector("#year79");
-const year78 = document.querySelector("#year78");
-
-
 
 
 
