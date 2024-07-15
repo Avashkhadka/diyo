@@ -93,7 +93,7 @@ body {
   position: absolute;
   transform: rotate(45deg);
   top: 6.9rem;
-  left: 60rem;
+  left: 55rem;
 }
 
 .navbar {
@@ -239,14 +239,70 @@ font-weight: 600;
 }
 
 .cal {
-  width: 80vw;
+  width: 95vw;
+  justify-content: space-between;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
 }
 
 .img img {
   width: 100%;
   border: 2px solid black;
+}
+.calcontainer{
+  padding: 2rem 1rem;
+}
+.previousthings{
+  padding:2rem 0rem 2rem 2rem;
+  width: 50%;
+}
+
+.calhead{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #00ac1f;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cal-dates{
+  padding: 2.5rem 1rem 2.5rem 0rem;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  display: flex;
+}
+
+  .dates-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  
+  .year-opt{
+  padding: 0rem 2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: 1s ease;
+  color: #00ac1f;
+  margin-bottom: 1rem;
+}
+.year-opt:hover{
+  color: black;
+}
+
+
+.activecal{
+  border-left: 2px solid #001D4C;
+
+}
+
+.year{
+  font-size: 1.2rem;
 }
 
 .navbar-res{
@@ -262,7 +318,7 @@ cursor: pointer;
 display: none;
 }    
 
-@media screen and (width<40rem) {
+@media screen and (width<55rem) {
   .navbar {
     display: none;
   }
@@ -377,7 +433,7 @@ line-height: 2.6rem;
 
 }
 
-@media screen and (width<40rem) {
+@media screen and (width<55rem) {
 .copyright-container{
   display: block;
 text-align: center;
@@ -461,7 +517,7 @@ gap: 1rem;
 
 
 
-@media screen and (width<40rem) {
+@media screen and (width<55rem) {
   .footer-links{
     display: block;
     }
@@ -662,7 +718,7 @@ color: #00ACEE;
 }
 
 
-@media screen and (width<40rem) {
+@media screen and (width<55rem) {
   .footer70{
     display: block;
   }
@@ -678,6 +734,15 @@ color: #00ACEE;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .cal{
+    display: block;
+  }
+  .previousthings{
+    width: 100%;
+  }
+  .cal-dates{
+    width: 85vw;
   }
 }
 
