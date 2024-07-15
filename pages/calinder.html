@@ -26,12 +26,16 @@
             <i class="fa-solid fa-xmark" id="cross"></i>
           </li>
           <a href="../index.html"><li class="btn">HOME</li></a>
-          <a href="aboutus.html"><li class="btn">ABOUT US</li></a>
-          <a href="contactus.html"><li class="btn">CONTACT US</li></a>
-          <a href="calinder.html"
-            ><li class="btn activepage">CALINDER(2081)</li></a
+          <a id="aboutus-res"
+            ><li class="btn">ABOUT US</li></a>
+
+          <a href="bod.html"
+            ><li class="btn js-aboutus-res">BOARD OF DIRECTORS</li></a
           >
-          <a href="bod.html"><li class="btn">BOARD OF DIRECTORS</li></a>
+
+          <a href="contactus.html"><li class="btn">CONTACT US</li></a>
+          <a href="calinder.html"> <li class="btn">CALINDER(2081)</li></a>
+
         </ul>
       </div>
       <div class="header">
@@ -88,20 +92,42 @@
       </div>
       <nav>
         <div class="navbar">
-          <ul>
-            <li class="btn"><a href="../index.html">HOME</a></li>
-            <li class="btn"><a href="aboutus.html">ABOUT US</a></li>
-            <li class="btn"><a href="contactus.html">CONTACT US</a></li>
-            <li class="btn activepage">
+          <ul class="ul">
+            <li class="btn  li"><a href="../index.html">HOME</a></li>
+            <li class="hoverbtn li">
+              <a href="" class="dropdown green">ABOUT US</a>
+              <ul class="js-aboutus">
+                <li>
+                  <a href="bod.html" class="green"
+                    >BOARD OF DIRECTORS</a
+                  >
+                </li>
+                <li>
+                  <a href="aboutus.html" class="green">ABOUT US</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="btn li">
+              <a href="contactus.html">CONTACT US</a>
+            </li>
+            <li class="btn activepage li">
               <a href="calinder.html">CALINDER(2081)</a>
             </li>
-            <li class="btn"><a href="bod.html">BOARD OF DIRECTORS</a></li>
+            <!-- <li class="btn"><a href="pages/bod.html">BOARD OF DIRECTORS</a></li> -->
           </ul>
+  
         </div>
         <div class="marquee">
           <marquee behavior="" direction="">This is message</marquee>
           <div class="ham">
             <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="pageloc">
+          <div class="pagloc-bg">
+            <div class="pagloc-left">Calinder(2081)</div>
+            <div class="pagloc-right">Home / Calinder</div>
           </div>
         </div>
       </nav>
