@@ -216,7 +216,7 @@
                     <textarea
                       name="msg"
                       class="msg"
-                      placeholder="Message"
+                      placeholder="Message of 100characters"
                       id="msg"
                     ></textarea>
                   </div>
@@ -294,7 +294,7 @@
           </div>
         </div>
 
-
+        
       </main>
 
       <footer>

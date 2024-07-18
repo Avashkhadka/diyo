@@ -124,11 +124,60 @@
         </div>
       </nav>
       <main>
-        <div class="main">
-lkashdfh
+        <div class="main-cont">
 
 
+      <div class="container">
+        <div class="msgheading">
+          <h1>Customer's inquiry</h1>
+        </div>
+        <div class="msgContent">
+          <div class="table-container">
+            <?php
+            include "connect.php";
+            $sql='SELECT * FROM webtable';
+            $res=mysqli_query($conn,$sql);
+            if(!$res){
+              echo"Data not found".mysqli_connect_error();
+            }else{
+              echo"<table>";
+              echo"<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Action</th></tr>";
+              while($row=mysqli_fetch_assoc($res)){
+                echo"<tr>";
+                  echo"<td>" . $row['webfName'] . "</td>";
+                  echo"<td>" . $row['weblName'] . "</td>";
+                  echo"<td>" . $row['webEmail'] . "</td>";
+                  echo"<td>" . $row['webSubject'] . "</td>";
+                  echo"<td>" . $row['webMessage'] . "</td>";
+                  echo"<td class='table-btn'><button class='table-btn-btn' onclick=ramesh('".$row['id'] ."')>Delete</button> </td> ";
+                echo"</tr>";
+              }
+            }
+              echo"</table>";
+            
+            
+            ?>
+          </div>
+        </div>
+      </div>
 
+      
+      <script>
+function ramesh(id) {
+    if (confirm('Are you sure you want to delete this record?')) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'delete.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                location.reload(); 
+            }
+        };
+        xhr.send('id=' + id);
+    }
+}
+
+</script>
 
 
 

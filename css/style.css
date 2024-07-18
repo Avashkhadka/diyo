@@ -964,3 +964,86 @@ background-color: #c6621e;
   .backbtn .btn-btn:hover a{
     color: #F0F0F0;
   }
+
+
+
+
+.container{
+  margin-top: 2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.msgheading h1{
+  background-color: #39AB92;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.table-container{
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.table-container table{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.table-container table th:nth-child(1),
+.table-container table th:nth-child(2),
+.table-container table th:nth-child(3),
+.table-container table th:nth-child(4),
+.table-container table td:nth-child(1),
+.table-container table td:nth-child(2),
+.table-container table td:nth-child(3),
+.table-container table td:nth-child(4)
+{
+  width: 15%;
+
+}
+
+.table-container table th,
+.table-container table td{
+  
+  border: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.table-container table td{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.table-container table th{
+  color: white;
+  font-size: 1.8rem;
+  background-color: #39AB92;
+}
+
+
+.table-btn{
+text-align: center;
+}
+
+.table-btn-btn{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+  color: #00ac1f;
+  border: 1px solid #00ac1f;
+  border-radius: 0.25rem;
+  transition: 0.25s ease;
+}
+
+.table-btn-btn:hover{
+  color: white;
+  background-color: #00ac1f;
+}
+
+.main-cont{
+  min-height: 50rem;
+}

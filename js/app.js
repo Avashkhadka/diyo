@@ -34,9 +34,9 @@ dropdownRes.addEventListener("click",(e)=>{
   // alert("hi")
 })
 
-
+if(window.location.href=="../pages/success.php"){
 
 let backbtn=document.querySelector(".gooback");
 backbtn.addEventListener("clicl",()=>{
   window.location.href="../index.html"
-})
+})}
