@@ -34,3 +34,9 @@ dropdownRes.addEventListener("click",(e)=>{
   // alert("hi")
 })
 
+
+
+let backbtn=document.querySelector(".gooback");
+backbtn.addEventListener("clicl",()=>{
+  window.location.href="../index.html"
+})

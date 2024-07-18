@@ -89,7 +89,7 @@
         <div class="navbar">
           <ul class="ul">
             <li class="btn li"><a href="../index.html">HOME</a></li>
-            <li class="hoverbtn activepage li">
+            <li class="hoverbtn li">
               <a href="" class="dropdown green"
                 >ABOUT US <i class="fa-solid fa-angle-down"></i
               ></a>
@@ -102,7 +102,7 @@
                 </li>
               </ul>
             </li>
-            <li class="btn li">
+            <li class="btn activepage li">
               <a href="contactus.php">CONTACT US</a>
             </li>
             <li class="btn li">
@@ -117,34 +117,100 @@
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
-        <!-- <div class="pagedenote">
-          <div class="imgbg">
-            <div class="imgs">
-              <div class="img-head-data">
-                <p>Who are we</p>
-                <div class="nav-sec">
-                  <h6>
-                    Home
-                    <ul>
-                      <li>About us</li>
-                    </ul>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+
         <div class="pageloc">
           <div class="pagloc-bg">
-            <div class="pagloc-left">About Us</div>
-            <div class="pagloc-right">Home / About Us / About Us</div>
+            <div class="pagloc-left">Contact Us</div>
+            <div class="pagloc-right">Home / contactus</div>
           </div>
         </div>
       </nav>
       <main>
-        <div class="main"></div>
-      </main>
+        <div class="contact-main">
+          <div class="datacontainer">
+            <div class="contact-header">
+              <h1 class="contact-head">Contact Us</h1>
+              <div class="contactp">
+                <p>
+                  Do not hesitate to reach out. Just fill in the contact form
+                  here
+                </p>
+                <p>and we’ll be sure to reply as fast as possible.</p>
+              </div>
+            </div>
+            <div class="message-box">
+              <div class="address-msg">
+                <div class="inside-address-msg">
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-location-dot"> </i>
+                    </div>
+                    <div class="ico-datd">Chalnakhel,Kathmandu</div>
+                  </div>
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="ico-datd">01-5124333</div>
+                  </div>
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="ico-datd">diyosaving@gmail.com</div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="inquery-msg">
+                <div
+                  style="
+                    width: 100%;
+                    background-color: greenyellow;
+                    font-size: 2rem;
+                    text-align: center;
+                    color: green;
+                    padding: 1rem;
+                  "
+                >
+                  Message sent succesufully
+                </div>
+                <div class="backbtn">
+                  <div class="btn-btn">
+                    <a href="../index.html">Go back to home:</a>                </div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <?php
+     ob_start();
+              include"../php/connect.php";
+                if($_SERVER["REQUEST_METHOD"] == "POST") {
+                  $fname = $_POST['fname'];
+                  $lname = $_POST['lname'];
+                  $email = $_POST['email'];
+                  $subject = $_POST['subject'];
+                  $message = $_POST['msg']; 
+                  if(empty($fname)||empty($lname)||empty($email)||empty($subject)||empty($message)){
+                    echo"";
+                  }
+
+                    $sql="INSERT INTO webtable (webfName,weblName,webEmail,webSubject,webMessage)values 
+                    ('$fname','$lname','$email','$subject','$message')";
+                    $res=mysqli_query($conn,$sql);
+                      if(!$res){
+                        echo "Failed to insert data: " . mysqli_connect_error();
+                      } else {
+                        echo "";
+                        // header('Location: hi.html');
+                        exit(); // Ensure that no other code is executed after redirection
+                      }  
+                  }
+                  ob_end_flush();
+                ?>
       <footer>
         <div class="footer">
           <div class="footer-links">
@@ -271,6 +337,7 @@
         </div>
       </footer>
     </div>
+
     <script src="../js/app.js"></script>
   </body>
 </html>

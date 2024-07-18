@@ -22,15 +22,15 @@
           </li>
           <a href="../index.html"><li class="btn">HOME</li></a>
           <a id="aboutus-res"
-            ><li class="btn">ABOUT US <i class="fa-solid fa-angle-down"></i></li
-          ></a>
+            ><li class="btn">ABOUT US<i class="fa-solid fa-angle-down"></i></li></a>
 
-          <a href="bod.html"
+          <a href="../pages/bod.html"
             ><li class="btn js-aboutus-res">BOARD OF DIRECTORS</li></a
           >
 
-          <a href="contactus.php"><li class="btn">CONTACT US</li></a>
-          <a href="calinder.html"> <li class="btn">CALINDER(2081)</li></a>
+          <a href="../pages/contactus.php"><li class="btn">CONTACT US</li></a>
+          <a href="../pages/calinder.html"> <li class="btn">CALINDER(2081)</li></a>
+
         </ul>
       </div>
       <div class="header">
@@ -90,25 +90,24 @@
           <ul class="ul">
             <li class="btn li"><a href="../index.html">HOME</a></li>
             <li class="hoverbtn activepage li">
-              <a href="" class="dropdown green"
-                >ABOUT US <i class="fa-solid fa-angle-down"></i
-              ></a>
-              <ul class="js-aboutus" style="position: absolute; width: 16rem">
-                <li>
-                  <a href="bod.html" class="green">BOARD OF DIRECTORS</a>
+              <a href="" class="dropdown green">ABOUT US <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="js-aboutus" style=" position: absolute;
+              width: 16rem;">
+                <li class="activepage">
+                  <a href="../pages/bod.html" class="green">BOARD OF DIRECTORS</a>
                 </li>
                 <li>
-                  <a href="aboutus.html" class="green">ABOUT US</a>
+                  <a href="../pages/aboutus.html" class="green">ABOUT US</a>
                 </li>
               </ul>
             </li>
             <li class="btn li">
-              <a href="contactus.php">CONTACT US</a>
+              <a href="../pages/contactus.php">CONTACT US</a>
             </li>
             <li class="btn li">
-              <a href="calinder.html">CALINDER(2081)</a>
+              <a href="../pages/calinder.html">CALINDER(2081)</a>
             </li>
-            <!-- <li class="btn"><a href="pages/bod.html">BOARD OF DIRECTORS</a></li> -->
+            <!-- <li class="btn"><a href="pages/../pages/bod.html">BOARD OF DIRECTORS</a></li> -->
           </ul>
         </div>
         <div class="marquee">
@@ -117,32 +116,24 @@
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
-        <!-- <div class="pagedenote">
-          <div class="imgbg">
-            <div class="imgs">
-              <div class="img-head-data">
-                <p>Who are we</p>
-                <div class="nav-sec">
-                  <h6>
-                    Home
-                    <ul>
-                      <li>About us</li>
-                    </ul>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="pageloc">
           <div class="pagloc-bg">
-            <div class="pagloc-left">About Us</div>
-            <div class="pagloc-right">Home / About Us / About Us</div>
+            <div class="pagloc-left">Customer's inquiry</div>
+            <div class="pagloc-right">Home / Contact Us / Customer's inquiry</div>
           </div>
         </div>
       </nav>
       <main>
-        <div class="main"></div>
+        <div class="main">
+lkashdfh
+
+
+
+
+
+
+
+        </div>
       </main>
 
       <footer>

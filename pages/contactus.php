@@ -22,15 +22,15 @@
           </li>
           <a href="../index.html"><li class="btn">HOME</li></a>
           <a id="aboutus-res"
-            ><li class="btn">ABOUT US <i class="fa-solid fa-angle-down"></i></li></a>
+            ><li class="btn">ABOUT US <i class="fa-solid fa-angle-down"></i></li
+          ></a>
 
           <a href="bod.html"
             ><li class="btn js-aboutus-res">BOARD OF DIRECTORS</li></a
           >
 
-          <a href="contactus.html"><li class="btn">CONTACT US</li></a>
+          <a href="contactus.php"><li class="btn">CONTACT US</li></a>
           <a href="calinder.html"> <li class="btn">CALINDER(2081)</li></a>
-
         </ul>
       </div>
       <div class="header">
@@ -88,11 +88,12 @@
       <nav>
         <div class="navbar">
           <ul class="ul">
-            <li class="btn  li"><a href="../index.html">HOME</a></li>
+            <li class="btn li"><a href="../index.html">HOME</a></li>
             <li class="hoverbtn li">
-              <a href="" class="dropdown green">ABOUT US <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="js-aboutus" style=" position: absolute;
-              width: 16rem;">
+              <a href="" class="dropdown green"
+                >ABOUT US <i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="js-aboutus" style="position: absolute; width: 16rem">
                 <li>
                   <a href="bod.html" class="green">BOARD OF DIRECTORS</a>
                 </li>
@@ -102,7 +103,7 @@
               </ul>
             </li>
             <li class="btn activepage li">
-              <a href="contactus.html">CONTACT US</a>
+              <a href="contactus.php">CONTACT US</a>
             </li>
             <li class="btn li">
               <a href="calinder.html">CALINDER(2081)</a>
@@ -125,7 +126,175 @@
         </div>
       </nav>
       <main>
-        <div class="main"></div>
+        <div class="contact-main">
+          <div class="datacontainer">
+            <div class="contact-header">
+              <h1 class="contact-head">Contact Us</h1>
+              <div class="contactp">
+                <p>
+                  Do not hesitate to reach out. Just fill in the contact form
+                  here
+                </p>
+                <p>and we’ll be sure to reply as fast as possible.</p>
+              </div>
+            </div>
+            <div class="message-box">
+              <div class="address-msg">
+                <div class="inside-address-msg">
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-location-dot"> </i>
+                    </div>
+                    <div class="ico-datd">Chalnakhel,Kathmandu</div>
+                  </div>
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="ico-datd">01-5124333</div>
+                  </div>
+                  <div class="location-pin">
+                    <div class="icon-ico">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="ico-datd">diyosaving@gmail.com</div>
+                  </div>
+                </div>
+</div>
+
+              <div class="inquery-msg">
+                <div class="err-group">
+                  <span class="error alertmsg"></span>
+                  <span class="Success alertmsg"></span>
+
+                </div>
+                <form method="POST" action="success.php">
+      
+                <div class="row1">
+                  <div class="fname">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      name="fname"
+                      class="FName"
+                      id="fname"
+                    />
+                  </div>
+                  <div class="lname">
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      name="lname"
+                      class="Lname"
+                      id="lname"
+                    />
+                  </div>
+                </div>
+                <div class="row1">
+                  <div class="email">
+                    <input
+                      type="email"
+                      placeholder="Enter email"
+                      name="email"
+                      class="email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="subject">
+
+                    <input
+                      type="text"
+                      placeholder="Enter subject"
+                      name="subject"
+                      class="subject"
+                      id="SSubject"
+                    />
+                  </div>
+                </div>
+                <div class="row1">
+                  <div class="MESSAGE">
+                    <textarea
+                      name="msg"
+                      class="msg"
+                      placeholder="Message"
+                      id="msg"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row1">
+                  <div class="submit-btn">
+                    <input type="submit" value="Send" id="datasubmit" name="Submit" class="sub-btn" />
+                  </div>
+                </div>
+                <script>
+                  let btn=document.querySelector("#datasubmit");
+                  btn.addEventListener("click",(e)=>{
+                    e.preventDefault();
+                    let fname=document.querySelector("#fname").value;
+                    let lname=document.querySelector("#lname").value;
+                    let email=document.querySelector("#email").value;
+                    let subject=document.querySelector("#SSubject").value;
+                    let msg=document.querySelector("#msg").value;
+                    let valid=true;
+                    if(fname==""&&lname==""&&email==""&&subject==""&&msg==""){
+                      errfun("all field");
+                      valid=false;
+                    }else{
+                      if(msg==""){
+                        errfun("Message");
+                        valid=false;
+                      }
+                      if(subject==""){
+                        errfun("Subject");
+                        valid=false;
+                      }
+                      if(email==""){
+                        errfun("Email");
+                        valid=false;
+                      }
+                      if(lname==""){
+                        errfun("last name");
+                        valid=false;
+                      }
+                      if(fname==""){
+                        errfun("First name");
+                        valid=false;
+                    }}
+                    
+                    if(valid){
+                      document.querySelector("form").submit();
+                    }
+                    setTimeout(() => {
+                      // window.location.href="success.php";
+                      console.log("hi ")
+                    }, 2000);
+                  })
+                  
+                  
+                  let errfun=(mes)=>{
+                    let succ= document.querySelector('.Success');
+                    succ.style.display='block';
+                    succ.innerText=`Please enter ${mes} `;
+                      setTimeout(() => {
+                        succ.innerText='';
+                        succ.style.display='none';
+                      }, 1500);
+                  }
+                </script>
+          
+              
+         
+
+
+                
+              </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </main>
 
       <footer>
@@ -254,6 +423,8 @@
         </div>
       </footer>
     </div>
+
+
     <script src="../js/app.js"></script>
   </body>
 </html>
