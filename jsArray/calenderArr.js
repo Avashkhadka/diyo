@@ -148,8 +148,4 @@ let calender=[
   image: 'assects/images/2079/6.jpg',
   year:'2079'
 },
-
 ]
-
-
-
