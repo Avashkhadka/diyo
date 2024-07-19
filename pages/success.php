@@ -164,20 +164,21 @@
 
               <div class="inquery-msg">
                 <div
+                id="successmsg"
                   style="
                     width: 100%;
-                    background-color: greenyellow;
                     font-size: 2rem;
                     text-align: center;
                     color: green;
                     padding: 1rem;
                   "
                 >
-                  Message sent succesufully
+                
                 </div>
                 <div class="backbtn">
                   <div class="btn-btn">
-                    <a href="../index.html">Go back to home:</a>                </div>
+                  <a href="contactus.php">Go back to Contact us :</a>
+                </div>
 
                   </div>
               </div>
@@ -186,31 +187,58 @@
         </div>
       </main>
       <?php
-     ob_start();
-              include"../php/connect.php";
-                if($_SERVER["REQUEST_METHOD"] == "POST") {
-                  $fname = $_POST['fname'];
-                  $lname = $_POST['lname'];
-                  $email = $_POST['email'];
-                  $subject = $_POST['subject'];
-                  $message = $_POST['msg']; 
-                  if(empty($fname)||empty($lname)||empty($email)||empty($subject)||empty($message)){
-                    echo"";
-                  }
+ob_start();
+include "../php/connect.php";
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['msg'];
+    if (empty($fname) || empty($lname) || empty($email) || empty($subject) || empty($message)) {
+      echo "All fields are required.";
+      return;
+    }
+else{
 
-                    $sql="INSERT INTO webtable (webfName,weblName,webEmail,webSubject,webMessage)values 
-                    ('$fname','$lname','$email','$subject','$message')";
-                    $res=mysqli_query($conn,$sql);
-                      if(!$res){
-                        echo "Failed to insert data: " . mysqli_connect_error();
-                      } else {
-                        echo "";
-                        // header('Location: hi.html');
-                        exit(); // Ensure that no other code is executed after redirection
-                      }  
-                  }
-                  ob_end_flush();
-                ?>
+            $sqlreq='SELECT * FROM webtable';
+            $result=mysqli_query($conn,$sqlreq);
+            while($res=mysqli_fetch_assoc($result))
+            {
+                echo"<script>console.log('".$res['webEmail']."')</script>";
+              if($email==$res['webEmail'])
+                {
+                echo "<script>let successmsg=document.querySelector('#successmsg');
+                successmsg.innerText='You cant send message again until previous msg is readen by admin.';
+                successmsg.style.backgroundColor='#cd5c5c63';
+                successmsg.style.color='#ff4747';</script>";
+                exit();
+            
+                }
+            }
+
+      
+        $sql = "INSERT INTO webtable (webfName, weblName, webEmail, webSubject, webMessage) VALUES ('$fname', '$lname', '$email', '$subject', '$message')";
+        $res = mysqli_query($conn, $sql);
+        if (!$res) {
+            echo "Failed to insert data: " . mysqli_connect_error();
+        } else {
+          echo "<script>let successmsg=document.querySelector('#successmsg');
+          successmsg.innerText='msg send successifully.';
+          successmsg.style.backgroundColor='rgb(154 255 0 / 37%)';
+          successmsg.style.color='rgb(56 93 0)';</script>";
+            exit();
+        }
+    }   
+    
+}
+
+ob_end_flush();
+?>
+
+
+
       <footer>
         <div class="footer">
           <div class="footer-links">
