@@ -1076,7 +1076,7 @@ width: 35%;
   min-height: 50rem;
   position: relative;
   width: 100%;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 
 .locmap iframe{

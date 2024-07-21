@@ -30,7 +30,8 @@
           >
 
           <a href="contactus.php"><li class="btn">CONTACT US</li></a>
-          <a href="calinder.html"> <li class="btn">CALINDER(2081)</li></a>
+          <a href="calinder.html"> <li class="btn">CALINDER</li></a>
+          <a href="download.html"> <li class="btn">DOWNLOAD</li></a>
         </ul>
       </div>
       <div class="header">
@@ -106,7 +107,10 @@
               <a href="contactus.php">CONTACT US</a>
             </li>
             <li class="btn li">
-              <a href="calinder.html">CALINDER(2081)</a>
+              <a href="calinder.html">CALINDER</a>
+            </li>
+            <li class="btn li">
+              <a href="download.html">DOWNLOAD</a>
             </li>
             <!-- <li class="btn"><a href="pages/bod.html">BOARD OF DIRECTORS</a></li> -->
           </ul>
