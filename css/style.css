@@ -792,6 +792,8 @@ font-style: italic;
   width: 65%;
   padding: 3rem;
 }
+
+
 .inside-address-msg{
   color: white;
   border-radius: 1rem;
@@ -801,7 +803,7 @@ font-style: italic;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 52rem;
+  height: 60rem;
 }
 
 
@@ -1068,4 +1070,138 @@ text-align: center;
 
 .capchaBox{
 width: 35%;
+}
+
+.locmap{
+  min-height: 50rem;
+  position: relative;
+  width: 100%;
+  background-color: rebeccapurple;
+}
+
+.locmap iframe{
+  min-height: 50rem;
+  position: absolute;
+  width: 100%;
+}
+.download-calinder{
+  padding:3rem 5rem;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+
+.linkbar{
+padding: 2.5rem 1rem 2.5rem 0;
+background-color: white;
+width: 21rem;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-container{
+  padding-left: 3rem;
+}
+
+.header-container .header{
+  color: #008C44;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.header-container .header:hover{
+  color: black;
+}
+
+.downloadheader-link{
+  font-size: 1.5rem;
+  color:black;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.header-link{
+  padding-left: 3rem;
+  border-left: 3px solid black;
+}
+
+
+.downloadbar{
+  width: 80%;
+}
+
+
+.downloadbar table{
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  border-collapse: collapse;
+  border: none;
+}
+
+.downloadbar table tr{
+  height: 4.2rem;
+  
+  
+}
+.downloadbar table tr th:first-child,
+.downloadbar table tr td:first-child{
+  width: 70%;
+text-align: left;
+padding: 1.2rem;
+}
+.downloadbar table tr th:last-child,
+.downloadbar table tr td:last-child{
+  padding: 1.2rem;
+  text-align: right;
+}
+
+.downloadbar thead tr{
+  background-color: #CCD5DB;
+  color: #585858;
+  font-size: 1.5rem;
+}
+.downloadbar tbody tr{
+  color: #212529;
+  font-size: 1.5rem;
+}
+
+
+
+.downloadbar tbody tr:nth-child(2n+1){
+  background-color: #F8F8F8;
+
+}
+.downloadbar tbody tr:nth-child(2n){
+  background-color: #EEEEEE;
+
+}
+
+
+.down{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+
+@media screen and (width<55rem) {
+  .linkbar{
+    display: none;
+  }
+  
+.downloadbar{
+  width: 100%;
+}
+
+.download-calinder {
+  padding: 3rem 1rem;
+}}
+
+.text-down a{
+  text-decoration: none;
+  color: #212529;
 }

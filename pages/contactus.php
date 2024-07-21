@@ -127,6 +127,7 @@
       </nav>
       <main>
         <div class="contact-main">
+
           <div class="datacontainer">
             <div class="contact-header">
               <h1 class="contact-head">Contact Us</h1>
@@ -138,212 +139,223 @@
                 <p>and we’ll be sure to reply as fast as possible.</p>
               </div>
             </div>
-            <div class="message-box">
-              <div class="address-msg">
-                <div class="inside-address-msg">
-                  <div class="location-pin">
-                    <div class="icon-ico">
-                      <i class="fa-solid fa-location-dot"> </i>
-                    </div>
-                    <div class="ico-datd">Chalnakhel,Kathmandu</div>
+            <div class="contactus-log">
+             <div class="form-add">
+                  <div class="message-box">
+                    <div class="address-msg">
+                      <div class="inside-address-msg">
+                        <div class="location-pin">
+                          <div class="icon-ico">
+                            <i class="fa-solid fa-location-dot"> </i>
+                          </div>
+                          <div class="ico-datd">Chalnakhel,Kathmandu</div>
+                        </div>
+                        <div class="location-pin">
+                          <div class="icon-ico">
+                            <i class="fa-solid fa-phone"></i>
+                          </div>
+                          <div class="ico-datd">01-5124333</div>
+                        </div>
+                        <div class="location-pin">
+                          <div class="icon-ico">
+                            <i class="fa-solid fa-envelope"></i>
+                          </div>
+                          <div class="ico-datd">diyosaving@gmail.com</div>
+                        </div>
+                      </div>
                   </div>
-                  <div class="location-pin">
-                    <div class="icon-ico">
-                      <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="ico-datd">01-5124333</div>
-                  </div>
-                  <div class="location-pin">
-                    <div class="icon-ico">
-                      <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="ico-datd">diyosaving@gmail.com</div>
-                  </div>
-                </div>
-</div>
 
-              <div class="inquery-msg">
-                <div class="err-group">
-                  <span class="error alertmsg"></span>
-                  <span class="Success alertmsg"></span>
+                  <div class="inquery-msg">
+                    <div class="err-group">
+                      <span class="error alertmsg"></span>
+                      <span class="Success alertmsg"></span>
 
-                </div>
-                <form method="POST" action="success.php">
-      
-                <div class="row1">
-                  <div class="fname">
-                    <input
-                      type="text"
-                      placeholder="First Name"
-                      name="fname"
-                      class="FName"
-                      id="fname"
-                    />
-                  </div>
-                  <div class="lname">
-                    <input
-                      type="text"
-                      placeholder="Last Name"
-                      name="lname"
-                      class="Lname"
-                      id="lname"
-                    />
-                  </div>
-                </div>
-                <div class="row1">
-                  <div class="email">
-                    <input
-                      type="email"
-                      placeholder="Enter email"
-                      name="email"
-                      class="email"
-                      id="email"
-                    />
-                  </div>
-                  <div class="subject">
+                    </div>
+                    <form method="POST" action="success.php">
 
-                    <input
-                      type="text"
-                      placeholder="Enter subject"
-                      name="subject"
-                      class="subject"
-                      id="SSubject"
-                    />
-                  </div>
-                </div>
-                
-                <div class="row1">
-                  <div class="capchabox">
-                    <div class="subject capchasib">
-                      <input type="text" name="capchasend" id="input-capcha"/> 
-                      <!-- <div class="message-capcha" id="capcha">
-                        
-                      </div> -->
-                      <div class="capchaBox">
-                        <input type="text" name="capchgen" readonly id="capcha">
+                    <div class="row1">
+                      <div class="fname">
+                        <input
+                          type="text"
+                          placeholder="First Name"
+                          name="fname"
+                          class="FName"
+                          id="fname"
+                        />
+                      </div>
+                      <div class="lname">
+                        <input
+                          type="text"
+                          placeholder="Last Name"
+                          name="lname"
+                          class="Lname"
+                          id="lname"
+                        />
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row1">
-                  <div class="MESSAGE">
-                    <textarea
-                      name="msg"
-                      class="msg"
-                      placeholder="Message of 100characters"
-                      id="msg"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="row1">
-                  <div class="submit-btn">
-                    <input type="submit" value="Send" id="datasubmit" name="Submit" class="sub-btn" />
-                  </div>
-                </div>
-                <script>
-                  let btn=document.querySelector("#datasubmit");
-                  let capcha=document.querySelector("#capcha");
-                  let capchaval='';
-                  let randomcapcha=()=>{
+                    <div class="row1">
+                      <div class="email">
+                        <input
+                          type="email"
+                          placeholder="Enter email"
+                          name="email"
+                          class="email"
+                          id="email"
+                        />
+                      </div>
+                      <div class="subject">
+
+                        <input
+                          type="text"
+                          placeholder="Enter subject"
+                          name="subject"
+                          class="subject"
+                          id="SSubject"
+                        />
+                      </div>
+                    </div>
                     
-                      for(let i=0;i<6;i++){
-                        let ainum=Math.floor(Math.random()*10)
-                        capchaval+=ainum;
-                      }
-                
-                      capcha.value=capchaval;
-                    }
-
-                    randomcapcha()
-                  btn.addEventListener("click",(e)=>{
-                    e.preventDefault();
-                    let fname=document.querySelector("#fname").value;
-                    let lname=document.querySelector("#lname").value;
-                    let email=document.querySelector("#email").value;
-                    let subject=document.querySelector("#SSubject").value;
-
-                    let inputCapcha=document.querySelector("#input-capcha").value;
-                    let msg=document.querySelector("#msg").value;
-                    let valid=true;
-
-
-                    if(fname==""&&lname==""&&email==""&&subject==""&&msg==""){
-                      errfun("all field");
-                      valid=false;
-                    }else{
-                      if(msg==""){
-                        errfun("Message");
-                        valid=false;
-                      }
-
-                      if(inputCapcha==""){
-                        errfun("Capcha");
-                        valid=false;
-                      }else{
-                        if(inputCapcha!==capchaval){
-                          errfun("correct capcha");
-                        valid=false;
+                    <div class="row1">
+                      <div class="capchabox">
+                        <div class="subject capchasib">
+                          <input type="text" name="capchasend" id="input-capcha"/> 
+                          <!-- <div class="message-capcha" id="capcha">
+                            
+                          </div> -->
+                          <div class="capchaBox">
+                            <input type="text" name="capchgen" readonly id="capcha">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row1">
+                      <div class="MESSAGE">
+                        <textarea
+                          name="msg"
+                          class="msg"
+                          placeholder="Message of 100characters"
+                          id="msg"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="row1">
+                      <div class="submit-btn">
+                        <input type="submit" value="Send" id="datasubmit" name="Submit" class="sub-btn" />
+                      </div>
+                    </div>
+                    <script>
+                      let btn=document.querySelector("#datasubmit");
+                      let capcha=document.querySelector("#capcha");
+                      let capchaval='';
+                      let randomcapcha=()=>{
+                        
+                          for(let i=0;i<6;i++){
+                            let ainum=Math.floor(Math.random()*10)
+                            capchaval+=ainum;
+                          }
+                    
+                          capcha.value=capchaval;
                         }
-                      }
 
-                      if(subject==""){
-                        errfun("Subject");
-                        valid=false;
-                      }
-                      if(email==""){
-                        errfun("Email");
-                        valid=false;
-                      }else{
-                      
-                        function validateEmail(email) {
-                            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                            return re.test(email);
-                        }
-                        if (!validateEmail(email)) {
-                          errfun("email not valid");
+                        randomcapcha()
+                      btn.addEventListener("click",(e)=>{
+                        e.preventDefault();
+                        let fname=document.querySelector("#fname").value;
+                        let lname=document.querySelector("#lname").value;
+                        let email=document.querySelector("#email").value;
+                        let subject=document.querySelector("#SSubject").value;
+
+                        let inputCapcha=document.querySelector("#input-capcha").value;
+                        let msg=document.querySelector("#msg").value;
+                        let valid=true;
+
+
+                        if(fname==""&&lname==""&&email==""&&subject==""&&msg==""){
+                          errfun("all field");
                           valid=false;
+                        }else{
+                          if(msg==""){
+                            errfun("Message");
+                            valid=false;
+                          }
+
+                          if(inputCapcha==""){
+                            errfun("Capcha");
+                            valid=false;
+                          }else{
+                            if(inputCapcha!==capchaval){
+                              errfun("correct capcha");
+                            valid=false;
+                            }
+                          }
+
+                          if(subject==""){
+                            errfun("Subject");
+                            valid=false;
+                          }
+                          if(email==""){
+                            errfun("Email");
+                            valid=false;
+                          }else{
+                          
+                            function validateEmail(email) {
+                                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                return re.test(email);
+                            }
+                            if (!validateEmail(email)) {
+                              errfun("email not valid");
+                              valid=false;
+                            }
+                          }
+                          if(lname==""){
+                            errfun("last name");
+                            valid=false;
+                          }
+                          if(fname==""){
+                            errfun("First name");
+                            valid=false;
+                        }}
+                        
+                        if(valid){
+                          document.querySelector("form").submit();
                         }
+                        // setTimeout(() => {
+                          // window.location.href="success.php";
+                          // console.log("hi ")
+                        // }, 2000);
+                      })
+                      
+                      
+                      let errfun=(mes)=>{
+                        let succ= document.querySelector('.Success');
+                        succ.style.display='block';
+                        succ.innerText=`Please enter ${mes} `;
+                          setTimeout(() => {
+                            succ.innerText='';
+                            succ.style.display='none';
+                          }, 1500);
                       }
-                      if(lname==""){
-                        errfun("last name");
-                        valid=false;
-                      }
-                      if(fname==""){
-                        errfun("First name");
-                        valid=false;
-                    }}
+                    </script>
+
+                  
+
+
+
                     
-                    if(valid){
-                      document.querySelector("form").submit();
-                    }
-                    // setTimeout(() => {
-                      // window.location.href="success.php";
-                      // console.log("hi ")
-                    // }, 2000);
-                  })
-                  
-                  
-                  let errfun=(mes)=>{
-                    let succ= document.querySelector('.Success');
-                    succ.style.display='block';
-                    succ.innerText=`Please enter ${mes} `;
-                      setTimeout(() => {
-                        succ.innerText='';
-                        succ.style.display='none';
-                      }, 1500);
-                  }
-                </script>
-          
-              
+                    </form>
+                    
+                  </div>
 
+            </div>
 
-
-                
-              </form>
-                
+            <div class="message-box locmap">
+              <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1707.4672283478228!2d85.27594377230264!3d27.646668751634092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb174fcd9a35e3%3A0x7c7e0edbdb09e32f!2sDiyo%20Saving%20And%20Credit%20Cooperative%20Ltd!5e1!3m2!1sen!2snp!4v1721563059318!5m2!1sen!2snp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
+
+          
         </div>
 
         
