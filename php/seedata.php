@@ -125,8 +125,6 @@
       </nav>
       <main>
         <div class="main-cont">
-
-
       <div class="container">
         <div class="msgheading">
           <h1>Customer's inquiry</h1>
@@ -178,10 +176,6 @@ function ramesh(id) {
 }
 
 </script>
-
-
-
-
         </div>
       </main>
 

@@ -1047,3 +1047,25 @@ text-align: center;
 .main-cont{
   min-height: 50rem;
 }
+
+.capchabox{
+  width: 100%;
+  position: relative;
+}
+.message-capcha{
+  position: absolute;
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.capchasib{
+  display: flex;
+  align-items: center;
+}
+.capchaBox input{
+text-align: center;
+}
+
+.capchaBox{
+width: 20%;
+}

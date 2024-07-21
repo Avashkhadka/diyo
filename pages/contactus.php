@@ -212,6 +212,19 @@
                   </div>
                 </div>
                 <div class="row1">
+                  <div class="capchabox">
+                    <div class="subject capchasib">
+                      <input type="text" id="input-capcha"/> 
+                      <!-- <div class="message-capcha" id="capcha">
+                        
+                      </div> -->
+                      <div class="capchaBox">
+                        <input type="text" readonly id="capcha">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row1">
                   <div class="MESSAGE">
                     <textarea
                       name="msg"
@@ -228,14 +241,31 @@
                 </div>
                 <script>
                   let btn=document.querySelector("#datasubmit");
+                  let capcha=document.querySelector("#capcha");
+                  let capchaval='';
+                  let randomcapcha=()=>{
+                    
+                      for(let i=0;i<6;i++){
+                        let ainum=Math.floor(Math.random()*10)
+                        capchaval+=ainum;
+                      }
+                
+                      capcha.value=capchaval;
+                    }
+
+                    randomcapcha()
                   btn.addEventListener("click",(e)=>{
                     e.preventDefault();
                     let fname=document.querySelector("#fname").value;
                     let lname=document.querySelector("#lname").value;
                     let email=document.querySelector("#email").value;
                     let subject=document.querySelector("#SSubject").value;
+
+                    let inputCapcha=document.querySelector("#input-capcha").value;
                     let msg=document.querySelector("#msg").value;
                     let valid=true;
+
+
                     if(fname==""&&lname==""&&email==""&&subject==""&&msg==""){
                       errfun("all field");
                       valid=false;
@@ -244,6 +274,17 @@
                         errfun("Message");
                         valid=false;
                       }
+
+                      if(inputCapcha==""){
+                        errfun("Capcha");
+                        valid=false;
+                      }else{
+                        if(inputCapcha!==capchaval){
+                          errfun("correct capcha");
+                        valid=false;
+                        }
+                      }
+
                       if(subject==""){
                         errfun("Subject");
                         valid=false;
@@ -251,6 +292,16 @@
                       if(email==""){
                         errfun("Email");
                         valid=false;
+                      }else{
+                      
+                        function validateEmail(email) {
+                            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            return re.test(email);
+                        }
+                        if (!validateEmail(email)) {
+                          errfun("email not valid");
+                          valid=false;
+                        }
                       }
                       if(lname==""){
                         errfun("last name");
@@ -264,10 +315,10 @@
                     if(valid){
                       document.querySelector("form").submit();
                     }
-                    setTimeout(() => {
+                    // setTimeout(() => {
                       // window.location.href="success.php";
-                      console.log("hi ")
-                    }, 2000);
+                      // console.log("hi ")
+                    // }, 2000);
                   })
                   
                   
@@ -303,7 +354,7 @@ else{
             $result=mysqli_query($conn,$sqlreq);
             while($res=mysqli_fetch_assoc($result))
             {
-                echo"<script>console.log('".$res['webEmail']."')</script>";
+                // echo"<script>console.log('".$res['webEmail']."')</script>";
               if($email==$res['webEmail'])
                 {
                 echo "<script>alert('You cant send message again until previous msg is readen by admin.')</script>";

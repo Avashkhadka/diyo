@@ -206,7 +206,7 @@ else{
             $result=mysqli_query($conn,$sqlreq);
             while($res=mysqli_fetch_assoc($result))
             {
-                echo"<script>console.log('".$res['webEmail']."')</script>";
+                // echo"<script>console.log('".$res['webEmail']."')</script>";
               if($email==$res['webEmail'])
                 {
                 echo "<script>let successmsg=document.querySelector('#successmsg');
