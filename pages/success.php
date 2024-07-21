@@ -296,7 +296,7 @@ ob_end_flush();
                     <a href="" class="green">FAQs</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Downloads</a>
+                    <a href="download.html" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
                     <a href="" class="green">Contact Us</a>
@@ -315,7 +315,7 @@ ob_end_flush();
                     <a href="" class="green">FAQs</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Downloads</a>
+                    <a href="download.html" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
                     <a href="" class="green">Contact Us</a>

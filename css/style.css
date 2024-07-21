@@ -1149,7 +1149,7 @@ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .downloadbar table tr th:first-child,
 .downloadbar table tr td:first-child{
-  width: 70%;
+  width: 85%;
 text-align: left;
 padding: 1.2rem;
 }
@@ -1185,6 +1185,7 @@ padding: 1.2rem;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  cursor: pointer;
 }
 
 
