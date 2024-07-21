@@ -196,7 +196,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $message = $_POST['msg'];
-    if (empty($fname) || empty($lname) || empty($email) || empty($subject) || empty($message)) {
+    $capcha = $_POST['capchasend'];
+    $capchgen = $_POST['capchgen'];
+    if (empty($fname) || empty($lname) || empty($email) || empty($subject) || empty($message) ||empty($capcha) ){
       echo "All fields are required.";
       return;
     }
@@ -207,7 +209,13 @@ else{
             while($res=mysqli_fetch_assoc($result))
             {
                 // echo"<script>console.log('".$res['webEmail']."')</script>";
-              if($email==$res['webEmail'])
+                // if(($email==$res['webEmail'])>5){
+                //   echo"<script>console.log('$email')</script>";
+                // }
+                  
+              
+                
+                if($email==$res['webEmail']||$capcha!=$capchgen)
                 {
                 echo "<script>let successmsg=document.querySelector('#successmsg');
                 successmsg.innerText='You cant send message again until previous msg is readen by admin.';

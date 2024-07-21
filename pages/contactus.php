@@ -211,15 +211,16 @@
                     />
                   </div>
                 </div>
+                
                 <div class="row1">
                   <div class="capchabox">
                     <div class="subject capchasib">
-                      <input type="text" id="input-capcha"/> 
+                      <input type="text" name="capchasend" id="input-capcha"/> 
                       <!-- <div class="message-capcha" id="capcha">
                         
                       </div> -->
                       <div class="capchaBox">
-                        <input type="text" readonly id="capcha">
+                        <input type="text" name="capchgen" readonly id="capcha">
                       </div>
                     </div>
                   </div>
@@ -334,50 +335,7 @@
                 </script>
           
               
-          <?php
-ob_start();
-include "../php/connect.php";
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['msg'];
-    if (empty($fname) || empty($lname) || empty($email) || empty($subject) || empty($message)) {
-      echo "All fields are required.";
-      return;
-    }
-else{
 
-            $sqlreq='SELECT * FROM webtable';
-            $result=mysqli_query($conn,$sqlreq);
-            while($res=mysqli_fetch_assoc($result))
-            {
-                // echo"<script>console.log('".$res['webEmail']."')</script>";
-              if($email==$res['webEmail'])
-                {
-                echo "<script>alert('You cant send message again until previous msg is readen by admin.')</script>";
-                exit();
-            
-                }
-            }
-
-      
-        $sql = "INSERT INTO webtable (webfName, weblName, webEmail, webSubject, webMessage) VALUES ('$fname', '$lname', '$email', '$subject', '$message')";
-        $res = mysqli_query($conn, $sql);
-        if (!$res) {
-            echo "Failed to insert data: " . mysqli_connect_error();
-        } else {
-          echo "<script>alert('msg send succesefully')</script>";
-            exit();
-        }
-    }   
-    
-}
-
-ob_end_flush();
-?>
 
 
                 
