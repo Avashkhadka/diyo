@@ -660,7 +660,11 @@ body {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.js-aboutus-res {
+.js-aboutus-res1,
+.js-aboutus-res2,
+.js-aboutus-res3,
+.js-aboutus-res4,
+.js-aboutus-res5{
   overflow: hidden;
   height: 0rem;
   transition: 0.5s ease;
@@ -1189,7 +1193,7 @@ body {
   max-width: 120rem;
   margin-inline: auto;
 }
-.bodcard-cont,.mtcard-cont {
+.bodcard-cont,.mtcard-cont,.lccard-cont,.asccard-cont,.eccard-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -25,8 +25,21 @@
             ><li class="btn">ABOUT US <i class="fa-solid fa-angle-down"></i></li
           ></a>
 
+   
           <a href="bod.html"
-            ><li class="btn js-aboutus-res">BOARD OF DIRECTORS</li></a
+            ><li class="btn js-aboutus-res1">BOARD OF DIRECTORS</li></a
+          >
+          <a href="Accountsupervisioncommittee.html"
+            ><li class="btn js-aboutus-res2">ACCOUNT SUPERVISION COMMITTEE</li></a
+          >
+          <a href="loan committee.html"
+            ><li class="btn js-aboutus-res3">LOAN COMMITTEE</li></a
+          >
+          <a href="Eduxationcommittee.html"
+            ><li class="btn js-aboutus-res4">EDUCATION COMMITTEE</li></a
+          >
+          <a href="managementTeam.html"
+            ><li class="btn js-aboutus-res5">EMPLOYEE</li></a
           >
 
           <a href="contactus.php"><li class="btn">CONTACT US</li></a>

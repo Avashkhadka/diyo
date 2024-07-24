@@ -19,7 +19,7 @@ let bod=[
   },
   {
     id:'4',
-    image:"../assects/structuremember/bod/Treasurer.jpg",
+    image:"../assects/structuremember/bod/treasurer.jpg",
     name:'Manju Thapa',
     post:"Treasurer",
   },
@@ -42,6 +42,71 @@ let bod=[
     post:"Board Member",
   },
 ]
+
+
+let asc=[
+  {
+    id:'1',
+    image:"../assects/structuremember/acccom/coordinator.jpg",
+    name:'Sarala Sahi',
+    post:"Coordintor",
+  },
+  {
+    id:'2',
+    image:"../assects/structuremember/acccom/member1.jpg",
+    name:'Rupak Luitel',
+    post:"Member",
+  },
+  {
+    id:'3',
+    image:"../assects/structuremember/acccom/member2.png",
+    name:'Ramesh Khadka',
+    post:"Member",
+  },
+]
+
+let lc=[
+  {
+    id:'1',
+    image:"../assects/structuremember/loancom/coordinator.jpg",
+    name:'Durga Thapa',
+    post:"Coordintor",
+  },
+  {
+    id:'2',
+    image:"../assects/structuremember/loancom/member1.jpg",
+    name:'Kabindra lama',
+    post:"Member",
+  },
+  {
+    id:'3',
+    image:"../assects/structuremember/loancom/member2.jpg",
+    name:'Sita Bista',
+    post:"Member",
+  },
+]
+let ec=[
+  {
+    id:'1',
+    image:"../assects/structuremember/educom/coordinator.jpg",
+    name:'Rajendra Basnet',
+    post:"Coordintor",
+  },
+  {
+    id:'2',
+    image:"../assects/structuremember/educom/member1.jpg",
+    name:'Bharat Karki',
+    post:"Member",
+  },
+  {
+    id:'3',
+    image:"../assects/structuremember/educom/member2.jpg",
+    name:'JayKrishna Giri',
+    post:"Member",
+  },
+]
+
+
 let managementTeam=[
   {
     id:'1',
@@ -58,7 +123,7 @@ let managementTeam=[
   {
     id:'3',
     image:"../assects/structuremember/managementTeam/mgmt3.jpg",
-    name:'Anita Thapa Khatri ',
+    name:'Suryakala K.C.',
     post:"Management Team",
   },
   {

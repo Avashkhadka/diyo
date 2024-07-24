@@ -26,10 +26,18 @@ dropdown.addEventListener("click",(e)=>{
 
 
 let dropdownRes=document.querySelector("#aboutus-res");
-let dropdowndataRes=document.querySelector(".js-aboutus-res");
+let dropdowndataRes1=document.querySelector(".js-aboutus-res1");
+let dropdowndataRes2=document.querySelector(".js-aboutus-res2");
+let dropdowndataRes3=document.querySelector(".js-aboutus-res3");
+let dropdowndataRes4=document.querySelector(".js-aboutus-res4");
+let dropdowndataRes5=document.querySelector(".js-aboutus-res5");
 dropdownRes.addEventListener("click",(e)=>{
   e.preventDefault();
-  dropdowndataRes.classList.toggle("js-aboutus-res-show");
+  dropdowndataRes1.classList.toggle("js-aboutus-res-show");
+  dropdowndataRes2.classList.toggle("js-aboutus-res-show");
+  dropdowndataRes3.classList.toggle("js-aboutus-res-show");
+  dropdowndataRes4.classList.toggle("js-aboutus-res-show");
+  dropdowndataRes5.classList.toggle("js-aboutus-res-show");
 
   // alert("hi")
 })
