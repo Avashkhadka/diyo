@@ -24,8 +24,21 @@
           <a id="aboutus-res"
             ><li class="btn">ABOUT US<i class="fa-solid fa-angle-down"></i></li></a>
 
-          <a href="../pages/bod.html"
-            ><li class="btn js-aboutus-res">BOARD OF DIRECTORS</li></a
+        
+            <a href="../pages/bod.html"
+            ><li class="btn js-aboutus-res1">BOARD OF DIRECTORS</li></a
+          >
+          <a href="../pages/Accountsupervisioncommittee.html"
+            ><li class="btn js-aboutus-res2">ACCOUNT SUPERVISION COMMITTEE</li></a
+          >
+          <a href="../pages/loan committee.html"
+            ><li class="btn js-aboutus-res3">LOAN COMMITTEE</li></a
+          >
+          <a href="../pages/Eduxationcommittee.html"
+            ><li class="btn js-aboutus-res4">EDUCATION COMMITTEE</li></a
+          >
+          <a href="../pages/managementTeam.html"
+            ><li class="btn js-aboutus-res5">EMPLOYEE</li></a
           >
 
           <a href="../pages/contactus.php"><li class="btn">CONTACT US</li></a>
@@ -231,7 +244,7 @@ function ramesh(id) {
                     <a href="" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Contact Us</a>
+                    <a href="../pages/contactus.php" class="green">Contact Us</a>
                   </div>
                 </div>
               </div>
@@ -250,7 +263,7 @@ function ramesh(id) {
                     <a href="" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Contact Us</a>
+                  <a href="../pages/contactus.php" class="green">Contact Us</a>
                   </div>
                 </div>
               </div>

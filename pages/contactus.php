@@ -430,7 +430,7 @@
                     <a href="download.html" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Contact Us</a>
+                  <a href="contactus.php" class="green">Contact Us</a>
                   </div>
                 </div>
               </div>
@@ -449,7 +449,7 @@
                     <a href="download.html" class="green">Downloads</a>
                   </div>
                   <div class="footer-usefullink">
-                    <a href="" class="green">Contact Us</a>
+                  <a href="contactus.php" class="green">Contact Us</a>
                   </div>
                 </div>
               </div>
