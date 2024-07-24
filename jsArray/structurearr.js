@@ -49,7 +49,7 @@ let asc=[
     id:'1',
     image:"../assects/structuremember/acccom/coordinator.jpg",
     name:'Sarala Sahi',
-    post:"Coordintor",
+    post:"Coordinator",
   },
   {
     id:'2',
@@ -70,7 +70,7 @@ let lc=[
     id:'1',
     image:"../assects/structuremember/loancom/coordinator.jpg",
     name:'Durga Thapa',
-    post:"Coordintor",
+    post:"Coordinator",
   },
   {
     id:'2',
@@ -90,7 +90,7 @@ let ec=[
     id:'1',
     image:"../assects/structuremember/educom/coordinator.jpg",
     name:'Rajendra Basnet',
-    post:"Coordintor",
+    post:"Coordinator",
   },
   {
     id:'2',
