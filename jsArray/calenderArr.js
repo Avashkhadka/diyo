@@ -25,7 +25,7 @@ let yearNameDate=[
 let calender=[
   {
   id: '001',
-  image: 'assects/images/2081/2081/calinder_1.jpg',
+  image: 'assects/images/2081/calinder_1.jpg',
   year:'2081'
 },
   {
