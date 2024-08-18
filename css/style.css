@@ -29,13 +29,6 @@ body {
   position: relative;
 }
 
-/* 
-.web-container{
-  background-color: rebeccapurple;
-  max-width: 1024px;
-  margin-inline: auto;
-} */
-
 .organizationName {
   display: flex;
   gap: 1rem;
@@ -238,7 +231,7 @@ body {
 }
 
 .cal {
-  width: 95vw;
+  width: 95%;
   justify-content: space-between;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -434,9 +427,9 @@ body {
 }
 
 /* * main */
-.main {
+/* .main {
   height: 90rem;
-}
+} */
 .footer-links .address {
   font-size: 1.8rem;
 }
@@ -551,7 +544,7 @@ body {
   background-color: #efe8ef;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .pagloc-bg {
@@ -664,7 +657,7 @@ body {
 .js-aboutus-res2,
 .js-aboutus-res3,
 .js-aboutus-res4,
-.js-aboutus-res5{
+.js-aboutus-res5 {
   overflow: hidden;
   height: 0rem;
   transition: 0.5s ease;
@@ -1157,15 +1150,14 @@ body {
   height: 26.2rem;
   width: 26.2rem;
 }
-.bodPic{
-   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.bodPic {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .bodCard {
   margin-bottom: 3.2rem;
   padding: 0 1.5rem;
   position: relative;
   display: flex;
-  
 }
 .bodDetail {
   padding: 2rem 0;
@@ -1193,7 +1185,11 @@ body {
   max-width: 120rem;
   margin-inline: auto;
 }
-.bodcard-cont,.mtcard-cont,.lccard-cont,.asccard-cont,.eccard-cont {
+.bodcard-cont,
+.mtcard-cont,
+.lccard-cont,
+.asccard-cont,
+.eccard-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1201,10 +1197,10 @@ body {
 .bodCard:hover .bodDetail {
   background-color: #00ac1f;
 }
-.bodCard:hover img{
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+.bodCard:hover img {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-
 
 .bodCard:hover .bodDetail .bodName {
   color: white;
@@ -1218,18 +1214,147 @@ body {
     width: 82.1%;
   }
 }
-.bodimg img{
+.bodimg img {
   height: 26.2rem;
   width: 26.2rem;
   object-fit: cover;
 }
 
-.downloadheader-link a{
+.downloadheader-link a {
   text-decoration: none;
   color: black;
   transition: 1s ease;
 }
 
-.downloadheader-link:hover a{
-  color:#00ac1f;
+.downloadheader-link:hover a {
+  color: #00ac1f;
+}
+.herocontainer {
+  position: relative;
+  background-image: url(../assects/images/diyohero.jpg);
+  height: 30rem;
+  width: 100%;
+  object-fit: contain;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  padding-left: 8rem;
+  flex-direction: column;
+}
+.HowItWorks {
+  margin-top: 3rem;
+  max-width: 60rem;
+  width: 60rem;
+}
+.hwicen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.HowItWorkSer {
+  display: flex;
+  margin-top: 3rem;
+  gap: 4rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.HowItWorkHeading {
+  justify-content: center;
+  width: 100%;
+  color: #474747;
+
+  display: flex;
+  font-size: 2rem;
+}
+
+@media screen and (width<55rem) {
+  .herocontainer {
+    height: 20rem;
+  }
+  .HowItWorkSer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (width>1400px) {
+  .web-container {
+    position: relative;
+    max-width: 1230px;
+    margin-inline: auto;
+  }
+}
+
+.hiwicon i {
+  color: #2CB02C;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.ourServives {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hwidetail {
+  color: #474747;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+
+.call{
+  background-color: #FFFFFF;
+  width: 12rem;
+  border-radius: 3.6rem;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.call a{
+  text-decoration: none;
+  transition: all 0.5s ease;
+color: #06771A;
+
+}
+
+.call:hover{
+  background-color: #06771A;
+}
+.call:hover a{
+  color: #FFFFFF;
+}
+
+
+@media screen and (width<55rem) {
+  .hiwicon i {
+    font-size: 4rem;
+  }
+
+  .hwidetail {
+    font-size: 1.8rem;
+  }
+  .HowItWorkHeading {
+    font-size: 1.5rem;
+  }
+  .herocontainer{
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    align-items: center;
+  }
 }

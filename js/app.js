@@ -1,37 +1,32 @@
-let ham=document.querySelector(".ham");
-let cross=document.querySelector("#cross");
-let nav=document.querySelector(".navbar-res");
-ham.addEventListener("click",()=>{
-  nav.style.display="block";
-})
+let ham = document.querySelector(".ham");
+let cross = document.querySelector("#cross");
+let nav = document.querySelector(".navbar-res");
+ham.addEventListener("click", () => {
+  nav.style.display = "block";
+});
 
-cross.addEventListener("click",()=>{
-  nav.style.display="none";
+cross.addEventListener("click", () => {
+  nav.style.display = "none";
+});
 
-  
-})
-
-
-
-let dropdown=document.querySelector(".dropdown");
-let dropdowndata=document.querySelector(".js-aboutus");
-let dropdowndatali=document.querySelectorAll(".js-aboutus li a");
-dropdown.addEventListener("click",(e)=>{
+let dropdown = document.querySelector(".dropdown");
+let dropdowndata = document.querySelector(".js-aboutus");
+let dropdowndatali = document.querySelectorAll(".js-aboutus li a");
+dropdown.addEventListener("click", (e) => {
   e.preventDefault();
   dropdowndata.classList.toggle("js-aboutus-show");
   dropdowndata.classList.toggle(".js-aboutus-show li a");
 
   // alert("hi")
-})
+});
 
-
-let dropdownRes=document.querySelector("#aboutus-res");
-let dropdowndataRes1=document.querySelector(".js-aboutus-res1");
-let dropdowndataRes2=document.querySelector(".js-aboutus-res2");
-let dropdowndataRes3=document.querySelector(".js-aboutus-res3");
-let dropdowndataRes4=document.querySelector(".js-aboutus-res4");
-let dropdowndataRes5=document.querySelector(".js-aboutus-res5");
-dropdownRes.addEventListener("click",(e)=>{
+let dropdownRes = document.querySelector("#aboutus-res");
+let dropdowndataRes1 = document.querySelector(".js-aboutus-res1");
+let dropdowndataRes2 = document.querySelector(".js-aboutus-res2");
+let dropdowndataRes3 = document.querySelector(".js-aboutus-res3");
+let dropdowndataRes4 = document.querySelector(".js-aboutus-res4");
+let dropdowndataRes5 = document.querySelector(".js-aboutus-res5");
+dropdownRes.addEventListener("click", (e) => {
   e.preventDefault();
   dropdowndataRes1.classList.toggle("js-aboutus-res-show");
   dropdowndataRes2.classList.toggle("js-aboutus-res-show");
@@ -40,18 +35,18 @@ dropdownRes.addEventListener("click",(e)=>{
   dropdowndataRes5.classList.toggle("js-aboutus-res-show");
 
   // alert("hi")
-})
+});
 
-if(window.location.href=="../pages/success.php"){
+if (window.location.href == "../pages/success.php") {
+  let backbtn = document.querySelector(".gooback");
+  backbtn.addEventListener("clicl", () => {
+    window.location.href = "../index.html";
+  });
+}
 
-let backbtn=document.querySelector(".gooback");
-backbtn.addEventListener("clicl",()=>{
-  window.location.href="../index.html"
-})}
-
-
-let addfooter=document.querySelector(".footer");
-addfooter.innerHTML=`
+let addfooter = document.querySelector(".footer");
+if (addfooter) {
+  addfooter.innerHTML = `
 <div class="footer-links">
             <div class="short-info">
               <div class="foot-logo">
@@ -62,9 +57,7 @@ addfooter.innerHTML=`
                 <br />
                 <br />
                 <div class="info-organ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus iste rem cupiditate ipsa similique laudantium! Veniam
-                  sint perspiciatis omnis consequatur?
+                  At Diyo Saving and Credit Co-operative Ltd., we empower communities by fostering financial security through collective savings and responsible credit services.s
                 </div>
                 <div class="sociallink">
                   <a
@@ -176,14 +169,5 @@ addfooter.innerHTML=`
               </p>
             </div>
           </div>
-`
-
-if(window.location.href==`http://127.0.0.1:5501/index.html`||window.location.href=="https://diyosaving.com.np/"||window.location.href=="https://diyosaving.com.np/index.html" ||window.location.href=="http://localhost/diyo/index.html"||window.location.href=="http://localhost/diyo/"){
-  contactusid=document.querySelector("#contactusid");
-  contactusid.href="pages/contactus.php"
-  downloadid=document.querySelector("#downloadID");
-  downloadid.href="pages/download.html"
+`;
 }
-
-
-

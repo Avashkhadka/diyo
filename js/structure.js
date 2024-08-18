@@ -18,6 +18,7 @@ bod.forEach(i => {
     </div>
   </div>`;
 });
+
 bodcardCont.innerHTML=bodinnerHtml;
 }
 
